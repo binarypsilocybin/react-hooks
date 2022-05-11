@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import Input from './components/checkBox.js';
 import App from './App.js';
-import StarRating from './components/StarRating.js';
+import StarRatings from './components/starRating.js';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Input />
-    <StarRating />
+    <StarRatings />
   </React.StrictMode>,
   document.getElementById('root')
 );
