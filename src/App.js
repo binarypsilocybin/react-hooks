@@ -1,17 +1,9 @@
-import React, {useState} from "react";
-import "./style.css";
+import React from 'react';
 
 export default function App() {
-  const [checked, setChecked] = useState(false)
   return (
-    <div>
-      <input 
-        type="checkbox"
-        value={checked}
-        onChange={() => 
-          setChecked((checked) => !checked)}  
-      />
-      <p>{checked ? "checked" : "not checked"}</p> 
+    <div className="App">
+      <h1>Hello World</h1>
     </div>
   );
 }

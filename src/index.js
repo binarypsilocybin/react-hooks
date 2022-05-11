@@ -1,13 +1,13 @@
-import React, { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import './style.css';
+import Input from './components/checkBox.js';
+import App from './App.js';
 
-import App from './App';
-
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
+ReactDOM.render(
+  <React.StrictMode>
     <App />
-  </StrictMode>
+    <Input />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
