@@ -9,11 +9,11 @@ export default function DispatchingReducer() {
     switch (action.type) {
       case 'yell':
         return {
-          message: 'HEY!',
+          message: `HEY! I JUST SAID ${state.message}`,
         };
       case 'whisper':
         return {
-          message: 'excuse me',
+          message: `excuse me, I just said ${state.message}`,
         };
     }
   }
@@ -21,6 +21,7 @@ export default function DispatchingReducer() {
     <>
       <p>Messages: {state.message}</p>
       <button onClick={() => dispatch({ type: 'yell' })}>YELL</button>
+      <button onClick={() => dispatch({ type: 'whisper' })}>WHISPER</button>
     </>
   );
 }
