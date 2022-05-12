@@ -1,6 +1,11 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-export default function StarRating() {
-  return (<FaStar />)
+export default function StarRatings() {
+  return (
+    <h1>
+      <FontAwesomeIcon icon={faStar} />
+    </h1>
+  );
 }

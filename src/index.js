@@ -7,8 +7,8 @@ import App from './App.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <Input />
+    <App />
     <StarRatings />
   </React.StrictMode>,
   document.getElementById('root')
