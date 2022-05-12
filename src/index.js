@@ -6,6 +6,7 @@ import StarRatings from './components/starRating.js';
 import GetDataUseEffect from './components/getDataUseEffect.js';
 import GetDataUseReducer from './components/getDataReducer.js';
 import DispatchingReducer from './components/dispatchingReducer.js';
+import UseRef from './components/useRef.js';
 
 import App from './App.js';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
     <GetDataUseEffect />
     <GetDataUseReducer />
     <DispatchingReducer />
+    <UseRef />
   </React.StrictMode>,
   document.getElementById('root')
 );
