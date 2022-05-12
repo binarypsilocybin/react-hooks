@@ -10,15 +10,14 @@ export default function GetData() {
   }, []);
   if (data) {
     return (
-      <>
-        <div>
-          <ul>
-            {data.map((user) => (
-              <li key={user.id}>{user.login}</li>
-            ))}
-          </ul>
-        </div>
-      </>
+      <div>
+        <ul>
+          {data.map((user) => (
+            <li key={user.id}>{user.login}</li>
+          ))}
+        </ul>
+        <button onClick={() => setData([])}>Remove</button>
+      </div>
     );
   }
 }
