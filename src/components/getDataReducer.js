@@ -1,9 +1,12 @@
 import React, { useReducer } from 'react';
 
 export default function GetDataUseEffect() {
-  const [number, setNumber] = useReducer(
-    (number, newNumber) => number + newNumber,
-    0
+  const [checked, toggle] = useReducer((checked) => !checked, false);
+  return (
+    <div>
+      <h3>useReducer on toggle</h3>
+      <input type="checkbox" value={checked} onChange={toggle} />
+      <p>{checked ? 'checked' : 'not checked'}</p>
+    </div>
   );
-  return <h1 onClick={() => setNumber(1)}>{number}</h1>;
 }
