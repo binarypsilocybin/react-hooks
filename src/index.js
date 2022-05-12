@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Input />
     <App />
-    <StarRatings />
+    <StarRatings totalStars={10}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
