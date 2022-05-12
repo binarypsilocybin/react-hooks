@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import Input from './components/checkBox.js';
 import StarRatings from './components/starRating.js';
-import GetData from './components/getData.js';
+import GetDataUseEffect from './components/getDataUseEffect.js';
+import GetDataUseReducer from './components/getDataReducer.js';
 import App from './App.js';
 
 ReactDOM.render(
@@ -11,7 +12,8 @@ ReactDOM.render(
     <Input />
     <App />
     <StarRatings totalStars={4} />
-    <GetData />
+    <GetDataUseEffect />
+    <GetDataUseReducer />
   </React.StrictMode>,
   document.getElementById('root')
 );

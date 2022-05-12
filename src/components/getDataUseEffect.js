@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function GetData() {
+export default function GetDataUseEffect() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -11,6 +11,7 @@ export default function GetData() {
   if (data) {
     return (
       <div>
+        <h1>Fetch with useEffect()</h1>
         <ul>
           {data.map((user) => (
             <li key={user.id}>{user.login}</li>
